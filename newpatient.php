@@ -32,6 +32,7 @@ require 'header.php';
                 <label for="category">Category</label>
                 <select name="category" id="category" class="form-control" required>
                   <option value="adult">Adult</option>
+                  <option value="nhis">NHIS</option>
                   <option value="pediatrics">Pediatrics</option>
                   <option value="fertility">Fertility</option>
                   <option value="family">Family</option>
@@ -204,8 +205,8 @@ require 'header.php';
                 <input type="text" name="company-name" id="company-name" class="form-control">
               </div>
               <div class="form-group col-sm-6 col-md-4">
-                <label for="nhis-id">NHIS Identification No</label>
-                <input type="text" name="nhis-id" id="nhis-id" class="form-control">
+                <label for="hmo-name">HMO Name</label>
+                <input type="text" name="hmo-name" id="hmo-name" class="form-control">
               </div>
               <div class="form-group col-sm-6 col-md-4">
                 <label for="hmo-id">HMO Identification No</label>

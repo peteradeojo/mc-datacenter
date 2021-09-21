@@ -71,6 +71,7 @@ class Patient extends Database
         'marital_status' => $this->marital_status,
         'state_of_origin' => $this->state_of_origin,
         'tribe' => $this->tribe,
+        'occupation' => $this->occupation,
         'address' => $this->address,
         'notes' => $this->notes
       ]

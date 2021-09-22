@@ -48,15 +48,15 @@ require 'header.php';
             </div>
             <div class="form-group col-sm-6 col-md-2">
               <label for="temp">Temperature</label>
-              <input type="number" name="temp" id="temp" class="form-control" step="0.1" required>
+              <input type="number" name="temp" id="temp" class="form-control" step="0.1">
             </div>
             <div class="form-group col-sm-6 col-md-2">
               <label for="pulse">Pulse</label>
-              <input type="number" name="pulse" id="pulse" class="form-control" step="0.1" required>
+              <input type="number" name="pulse" id="pulse" class="form-control" step="0.1">
             </div>
             <div class="form-group col-sm-6 col-md-2">
               <label for="resp">Respiration</label>
-              <input type="number" name="resp" id="resp" class="form-control" step="0.1" required>
+              <input type="number" name="resp" id="resp" class="form-control" step="0.1">
             </div>
             <div class="form-group col-sm-6 col-md-2">
               <label for="bp">B/P</label>
@@ -64,7 +64,7 @@ require 'header.php';
             </div>
             <div class="form-group col-sm-6 col-md-2">
               <label for="weight">Weight</label>
-              <input type="number" name="weight" id="weight" class="form-control" step="0.1" required>
+              <input type="number" name="weight" id="weight" class="form-control" step="0.1">
             </div>
             <div class="form-group col-md-6">
               <label for="complaint">Complaint</label>

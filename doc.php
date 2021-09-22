@@ -59,7 +59,7 @@ require 'header.php';
         <p><?= $doc['diagnosis'] ?></p>
       </div>
       <div class="col-md-6">
-        <p><b>Inestigations</b></p>
+        <p><b>Investigations</b></p>
         <p><?= $doc['lab_tests'] ?></p>
       </div>
       <div class="col-md-6">

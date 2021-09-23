@@ -43,7 +43,7 @@ require 'header.php';
         <p><b>Pulse</b>: <?= $doc['pulse'] ?>bps</p>
       </div>
       <div class="col-sm-2">
-        <p><b>B/P</b>: <?= $doc['bp'] ?>(mmHg)</p>
+        <p><b>Respiration</b>: <?= $doc['resp'] ?> cpm</p>
       </div>
       <div class="col-sm-2">
         <p><b>B/P</b>: <?= $doc['bp'] ?>(mmHg)</p>

@@ -35,14 +35,15 @@ class Database
 			$sql .= "(" . join(",", array_keys($data)) . ") ";
 			$sql .= "VALUES (";
 			$beep = array_map(function ($value) use ($sql) {
-				return "'$value'";
+				if ($value) {
+					return "'$value'";
+				} else {
+					return "null";
+				}
 			}, array_values($data));
 			$sql .= join(',', $beep);
 			$sql .= ");";
 		}
-
-		// echo $sql;
-		// exit();
 
 		try {
 			if (count($rows_values) > 1) {

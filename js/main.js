@@ -63,7 +63,14 @@ $(() => {
       { data: "hospital_number" },
       { data: "name" },
       { data: "category" },
+      { data: "birthdate" },
+      { data: "gender" },
+      { data: "marital_status" },
+      { data: "occupation" },
+      { data: "religion" },
     ],
+    buttons: ["csv", "excel", "pdf"],
+    dom: "Bfrtip",
   });
 
   $("#patients-table tbody").on("click", "td.details-control", function () {
@@ -98,6 +105,8 @@ $(() => {
       { data: "name" },
       { data: "date" },
     ],
+    buttons: ["csv", "excel", "pdf"],
+    dom: "Bfrtip",
   });
 
   $("#documentation-table tbody").on(

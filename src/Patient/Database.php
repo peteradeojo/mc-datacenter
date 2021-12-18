@@ -2,10 +2,8 @@
 
 namespace Patient;
 
-use Error;
 use mysqli;
 use Exception;
-use Patient\Patient;
 
 class Database
 {

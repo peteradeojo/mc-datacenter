@@ -70,7 +70,15 @@ $(() => {
       { data: "occupation", visible: false },
       { data: "religion", visible: false },
     ],
-    buttons: ["csv", "excel", "pdf"],
+    buttons: [
+      {
+        extend: "csv",
+        exportOptions: {
+          columns: ":not(.details-control)",
+        },
+      },
+      "excel",
+    ],
     dom: "Bfrtip",
   });
 
@@ -118,7 +126,11 @@ $(() => {
       { data: "admission_date", visible: false },
       { data: "discharge_date", visible: false },
     ],
-    buttons: ["csv", "excel", "pdf"],
+    buttons: [
+      { extend: "csv", exportOptions: { columns: ":not(.details-control)" } },
+      "excel",
+      "pdf",
+    ],
     dom: "Bfrtip",
   });
 

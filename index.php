@@ -21,7 +21,7 @@ require './header.php';
           <th>Hospital No.</th>
           <th>Name</th>
           <th>Category</th>
-          <th>Date of Birth</th>
+          <th>Date of Birth</th> 
           <th>Gender</th>
           <th>Marital Status</th>
           <th>Occupation</th>

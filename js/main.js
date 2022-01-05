@@ -69,6 +69,7 @@ $(() => {
       { data: "marital_status", visible: false },
       { data: "occupation", visible: false },
       { data: "religion", visible: false },
+      { data: "phone_number", visible: false },
     ],
     buttons: [
       {

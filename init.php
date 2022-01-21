@@ -13,9 +13,9 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 // }
 
-if (@!$_SESSION['login']) {
-  echo $_SERVER['SCRIPT_NAME'];
-  exit();
+if ($_SESSION['login'] !== true) {
+  // echo $_SERVER['SCRIPT_NAME'];
+  // exit();
   if (!str_ends_with($_SERVER['SCRIPT_NAME'], "/login.php")) {
     header("Location: /login.php");
   }

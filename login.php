@@ -4,7 +4,6 @@
 use Patient\Database;
 
 require 'init.php';
-// require 'dbconfig.php';
 
 if ($_POST) {
   $username = trim(htmlspecialchars(strip_tags($_POST['username'])));
@@ -16,6 +15,7 @@ if ($_POST) {
     $db->connect();
     $user = $db->select('login', '*', "username='$username' and password='$password'")[0];
     if ($user) {
+      print_r($user);
       $_SESSION['login'] = true;
       $_SESSION['user'] = $user;
       // print_r($_SESSION);

@@ -18,13 +18,13 @@ if ($_POST) {
     if ($user) {
       $_SESSION['login'] = true;
       $_SESSION['user'] = $user['username'];
-      print_r($_SESSION);
+      // print_r($_SESSION);
     }
   } catch (Exception $e) {
     echo $e->getMessage();
     flash(['message' => $e->getMessage(), 'mode' => 'danger', 'title' => 'Login']);
   } finally {
-    // header("Location: /");
+    header("Location: /");
   }
 
   exit();

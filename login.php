@@ -14,7 +14,7 @@ if ($_POST) {
   try {
     $db = new Database();
     $db->connect();
-    $user = $db->select('login', where: "username='$username' and password='$password'")[0];
+    $user = $db->select('login', '*', "username='$username' and password='$password'")[0];
     if ($user) {
       $_SESSION['login'] = true;
       $_SESSION['user'] = $user['username'];

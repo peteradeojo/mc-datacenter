@@ -26,7 +26,6 @@ require './header.php';
           <th>Marital Status</th>
           <th>Occupation</th>
           <th>Religion</th>
-          <th>Phone Number</th>
         </tr>
       </thead>
       <tbody></tbody>

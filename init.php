@@ -14,6 +14,7 @@ $dotenv->load();
 // }
 
 if (@$_SESSION['login'] !== true) {
+  print_r($_SESSION);
   // echo $_SERVER['SCRIPT_NAME'];
   // exit();
   if (!str_ends_with($_SERVER['SCRIPT_NAME'], "/login.php")) {

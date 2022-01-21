@@ -17,7 +17,7 @@ if ($_POST) {
     $user = $db->select('login', '*', "username='$username' and password='$password'")[0];
     if ($user) {
       $_SESSION['login'] = true;
-      $_SESSION['user'] = $user['username'];
+      $_SESSION['user'] = $user;
       // print_r($_SESSION);
     }
     header("Location: /");

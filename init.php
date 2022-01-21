@@ -13,6 +13,8 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 // }
 
+print_r($_ENV);
+
 if (@$_SESSION['login'] !== true) {
   // print_r($_SESSION);
   // echo $_SERVER['SCRIPT_NAME'];

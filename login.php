@@ -20,11 +20,10 @@ if ($_POST) {
       $_SESSION['user'] = $user['username'];
       // print_r($_SESSION);
     }
+    header("Location: /");
   } catch (Exception $e) {
     echo $e->getMessage();
     flash(['message' => $e->getMessage(), 'mode' => 'danger', 'title' => 'Login']);
-  } finally {
-    header("Location: /");
   }
 
   exit();

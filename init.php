@@ -13,7 +13,7 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 // }
 
-echo $_SERVER['SCRIPT_NAME'];
+// echo @$_SESSION['login'] === true ? "Logged in" : "Not logged in";
 
 if (@$_SESSION['login'] !== true) {
   if (!str_ends_with($_SERVER['SCRIPT_NAME'], "/login.php")) {

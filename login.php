@@ -15,10 +15,11 @@ if ($_POST) {
     $db->connect();
     $user = $db->select('login', '*', "username='$username' and password='$password'")[0];
     if ($user) {
-      print_r($user);
-      exit();
       $_SESSION['login'] = true;
       $_SESSION['user'] = $user;
+      print_r($user);
+      print_r($_SESSION);
+      exit();
       header("Location: /");
     } else {
       header("Location: /login.php");

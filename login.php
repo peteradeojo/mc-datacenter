@@ -17,9 +17,9 @@ if ($_POST) {
     if ($user) {
       $_SESSION['login'] = true;
       $_SESSION['user'] = $user;
-      print_r($user);
-      print_r($_SESSION);
-      exit();
+      // print_r($user);
+      // print_r($_SESSION);
+      // exit();
       header("Location: /");
     } else {
       header("Location: /login.php");

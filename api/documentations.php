@@ -13,12 +13,14 @@ try {
 	$data = $db->select('documentations');
 
 	// Select name from Database for each of the documentations and add it
-	for ($i = 0; $i < count($data); $i += 1) {
-		$name = $db->select('biodata', 'name', where: "hospital_number='" . $data[$i]['hospital_number'] . "'")[0];
-		$data[$i]['name'] = $name['name'];
-	}
 
-	echo json_encode($data);
+	$new = array_map(function ($arr) use ($db) {
+		$name = $db->select('biodata', 'name', where: "hospital_number='" . $arr['hospital_number'] . "'")[0];
+		$arr['name'] = $name['name'];
+		return $arr;
+	}, $data);
+
+	echo json_encode($new);
 } catch (Exception $e) {
 	echo json_encode([]);
 }
